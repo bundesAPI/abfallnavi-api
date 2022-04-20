@@ -1,6 +1,6 @@
 openapi: 3.0.0
 servers:
-  - url: "https://{region}-abfallapp.regioit.de/abfall-app-{region}/rest"
+  - url: "https://{region}-abfallapp.regioit.de/abfall-app-{region2}/rest"
     variables:
       region:
         enum:
@@ -24,6 +24,9 @@ servers:
           - "wml2" # EGW Westmünsterland
         default: "nuernberg"
         description: Region
+      region2:
+        default: "nuernberg"
+        description: Region (s.o.)  
 info:
   title: Abfallnavi API
   version: "1.0.0"
